@@ -1,0 +1,222 @@
+/* styles.css */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 10px 0;
+  background-color: white;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  border-radius: 20px;
+  margin: 0 15px;
+  padding: 10px 15px;
+  transition: background 0.3s;
+  transition: text 0.3s;
+}
+
+header a[class="sub"]:hover {
+  background-color: #f0bb1f;
+  color: white;
+}
+
+
+.section {
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#home,
+#tentang,
+#kontak,
+#katalog {
+  background: #ffffff;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.row-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+.col {
+  flex: 1;
+  padding: 20px;
+}
+.row-kontak {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0px;
+}
+
+.col-kontak {
+  padding: 0px;
+  max-width: 400px;
+}
+
+.custom-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #f0bb1f;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #cc9d10;
+}
+
+.tentang-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+.payment-img {
+  max-width: 100%;
+  height: auto;
+  width: 50px;
+}
+.icons-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.image-carousel {
+  transition: transform 0.3s ease;
+}
+.image-carousel:hover {
+  z-index: 999;
+  transform: scale(1.2);
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-inner {
+  display: flex;
+  animation: slide 40s linear infinite;
+}
+
+.carousel-inner-reverse {
+  display: flex;
+  animation: slide-reverse 40s linear infinite;
+}
+
+.carousel img {
+  width: 200px; /* Adjust the size as needed */
+  margin: 0 10px; /* Adjust the spacing as needed */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-1200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-reverse {
+  0% {
+    transform: translateX(-1200px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-1200px);
+  }
+}
+/* calc(250px * 5 - 50px) */
+/* calc(-210px * 5 - 50px) */
+/* @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-200px * 5 - 50px)); }
+}
+
+@keyframes slide-reverse {
+    0% { transform: translateX(calc(-200px * 5 - 50px)); }
+    100% { transform: translateX(0); }
+} */

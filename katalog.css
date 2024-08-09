@@ -1,0 +1,223 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 10px 0;
+  background-color: white;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 250px;
+}
+
+.search-container input[type="text"] {
+  width: 650px;
+  padding: 10px 40px 10px 20px; /* Tambahkan ruang di kanan untuk tombol pencarian */
+  border-width: 1.5px;
+  border-radius: 20px;
+  font-size: large;
+  border: 1.5px solid black;
+}
+
+.search-container .search-button {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 10px; /* Sesuaikan posisi horizontal */
+  top: 50%; /* Vertikal tengah */
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 0;
+}
+
+.search-container .search-button img {
+  width: 26px;
+  height: 26px;
+}
+
+.navbar-brand {
+  font-size: 19pt;
+  font-weight: bold;
+  margin-left: 30px;
+  text-decoration: none;
+  color: #333;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header a {
+  margin: 0 15px;
+  padding: 10px 15px;
+}
+
+.section {
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+main {
+  padding: 20px;
+}
+
+.katalog {
+  margin-bottom: 20px;
+}
+
+.katalog h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.produk {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: flex-end;
+  height: auto;
+  width: auto;
+  margin-left: 0%;
+  gap: 2%;
+}
+
+.produk-items {
+  width: 18%;
+  text-align: center;
+  margin-bottom: 1%;
+  border: 2px solid #ccc;
+  padding: 0px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  transition: border-color 0.2s ease;
+}
+.produk-items:hover {
+  border-color: #f0bb1f;
+}
+
+.produk-items img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 5%;
+}
+
+.produk-items h3 {
+  display: grid;
+  place-items: center;
+  align-items: flex-end;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.produk-items p {
+  display: grid;
+  place-items: center;
+  align-items: flex-end;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+
+.row-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+}
+
+.col {
+  flex: 1;
+  padding: 20px;
+}
+
+.row-kontak {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2px;
+}
+
+.col-kontak {
+  padding: 2px;
+}
+
+.custom-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #f0bb1f;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.tentang-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.payment-img {
+  max-width: 100%;
+  height: auto;
+  width: 50px;
+}
+
+.icons-img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
